@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #fdfbfb, #ebedee);
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #4caf50;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-section input, .input-section button {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #4caf50;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-section input:focus {
+    border-color: #2196f3;
+    box-shadow: 0 0 8px rgba(33, 150, 243, 0.5);
+}
+
+.input-section button {
+    background: linear-gradient(120deg, #4caf50, #2196f3);
+    color: #fff;
+    cursor: pointer;
+}
+
+.input-section button:hover {
+    background: linear-gradient(120deg, #2196f3, #4caf50);
+}
+
+.graph-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.graph {
+    flex: 1;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.graph h2 {
+    text-align: center;
+    color: #2196f3;
+    margin-bottom: 20px;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.bar span {
+    min-width: 120px;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.bar div {
+    height: 20px;
+    margin-left: 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.price-bar {
+    background: linear-gradient(120deg, #4caf50, #81c784);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.rating-bar {
+    background: linear-gradient(120deg, #2196f3, #64b5f6);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sort-buttons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.sort-buttons button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background: linear-gradient(120deg, #ff9800, #ffc107);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.sort-buttons button:hover {
+    background: linear-gradient(120deg, #ffc107, #ff9800);
+}

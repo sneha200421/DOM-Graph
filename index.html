@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Bar Graph</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <h1>Product Bar Graphs</h1>
+
+    <div class="input-section">
+        <input type="text" id="product-name" placeholder="Product Name">
+        <input type="number" id="product-price" placeholder="Price" min="0">
+        <input type="number" id="product-rating" placeholder="Rating (1-5)" min="1" max="5">
+        <button id="add-product">Add Product</button>
+    </div>
+    <div class="graph-container">
+        <div class="graph">
+            <h2>Price Graph</h2>
+            <div id="price-graph"></div>
+            <div class="sort-buttons">
+                <button onclick="sortGraph('price', 'asc')">Sort by Price (Low to High)</button>
+                <button onclick="sortGraph('price', 'desc')">Sort by Price (High to Low)</button>
+            </div>
+        </div>
+        <div class="graph">
+            <h2>Rating Graph</h2>
+            <div id="rating-graph"></div>
+            <div class="sort-buttons">
+                <button onclick="sortGraph('rating', 'asc')">Sort by Rating (Low to High)</button>
+                <button onclick="sortGraph('rating', 'desc')">Sort by Rating (High to Low)</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
